@@ -1,0 +1,13 @@
+---
+:backends:
+  - eyaml
+:eyaml:
+  :datadir: "/etc/puppet/hieradata/%{::environment}"
+  :pkcs7_public_key: "/etc/puppet/keys/public_key.pkcs7.pem"
+  :pkcs7_private_key: "/etc/puppet/keys/private_key.pkcs7.pem"
+  :extension: 'yaml'
+:hierarchy:
+  - "nodes/%{::fqdn}"
+  - common
+:merge_behavior: deeper
+

@@ -1,0 +1,9 @@
+---
+cachedir: /var/cache/r10k
+sources:
+  modules:
+    remote: https://github.com/jlejeune/jlejeune.home-r10k-environments
+    basedir: /etc/puppet/environments
+  hiera:
+    remote: https://github.com/jlejeune/jlejeune.home-r10k-hiera
+    basedir: /etc/puppet/hieradata
